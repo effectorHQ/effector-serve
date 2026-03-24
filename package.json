@@ -1,0 +1,29 @@
+{
+  "name": "@effectorhq/server",
+  "version": "0.1.0",
+  "description": "HTTP and runtime server layer for typed effector tools — discovery, permission gates, and tool execution (WIP).",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/effectorHQ/effector-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/effectorHQ/effector-server/issues"
+  },
+  "homepage": "https://github.com/effectorHQ/effector-server#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "effector",
+    "effectorhq",
+    "mcp",
+    "openclaw",
+    "ai-agents"
+  ]
+}
