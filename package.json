@@ -1,9 +1,26 @@
 {
   "name": "@effectorhq/server",
   "version": "0.1.0",
-  "description": "HTTP and runtime server layer for typed effector tools — discovery, permission gates, and tool execution (WIP).",
+  "description": "Runtime MCP server with typed validation, capability discovery, and composition",
   "type": "module",
   "main": "src/index.js",
+  "bin": {
+    "effector-serve": "bin/effector-serve.js",
+    "effector-server": "bin/effector-serve.js"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "node bin/effector-serve.js"
+  },
+  "keywords": [
+    "effector",
+    "effectorhq",
+    "mcp",
+    "openclaw",
+    "ai-agents",
+    "type-safety",
+    "runtime-validation"
+  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -16,14 +33,10 @@
   "engines": {
     "node": ">=18"
   },
-  "scripts": {
-    "test": "node --test"
-  },
-  "keywords": [
-    "effector",
-    "effectorhq",
-    "mcp",
-    "openclaw",
-    "ai-agents"
-  ]
+  "dependencies": {
+    "@effectorhq/core": "file:../effector-core",
+    "@effectorhq/skill-mcp": "file:../openclaw-mcp",
+    "@effectorhq/compose": "file:../effector-compose",
+    "@effectorhq/types": "file:../effector-types"
+  }
 }
