@@ -1,12 +1,11 @@
 {
-  "name": "@effectorhq/server",
+  "name": "@effectorhq/serve",
   "version": "0.1.0",
   "description": "Runtime MCP server with typed validation, capability discovery, and composition",
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "effector-serve": "bin/effector-serve.js",
-    "effector-server": "bin/effector-serve.js"
+    "effector-serve": "bin/effector-serve.js"
   },
   "scripts": {
     "test": "node --test tests/*.test.js",
@@ -24,12 +23,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/effectorHQ/effector-server.git"
+    "url": "https://github.com/effectorHQ/effector-serve.git"
   },
   "bugs": {
-    "url": "https://github.com/effectorHQ/effector-server/issues"
+    "url": "https://github.com/effectorHQ/effector-serve/issues"
   },
-  "homepage": "https://github.com/effectorHQ/effector-server#readme",
+  "homepage": "https://github.com/effectorHQ/effector-serve#readme",
   "engines": {
     "node": ">=18"
   },

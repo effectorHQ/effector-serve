@@ -1,4 +1,4 @@
-# @effectorhq/server
+# @effectorhq/serve
 
 [![Status: Alpha](https://img.shields.io/badge/status-alpha-orange.svg)](#)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
@@ -7,7 +7,7 @@
 
 **Runtime MCP server with typed validation, capability discovery, and composition.**
 
-Source repo: **[effectorHQ/effector-server](https://github.com/effectorHQ/effector-server)**. CLI: `effector-serve` or `effector-server` (same binary).
+Source repo: **[effectorHQ/effector-serve](https://github.com/effectorHQ/effector-serve)**. CLI: `effector-serve`.
 
 Wraps any skill directory as an MCP server that validates tool I/O against declared types at runtime, lets agents discover capabilities by type signature, and suggests multi-step skill chains.
 
@@ -18,13 +18,13 @@ Three runtime layers — **Typed**, **Composable**, **Verifiable** — built on 
 ## Install
 
 ```bash
-npm install @effectorhq/server
+npm install @effectorhq/serve
 ```
 
 Or run directly:
 
 ```bash
-npx @effectorhq/server ./my-skills
+npx @effectorhq/serve ./my-skills
 ```
 
 ## Quick Start
@@ -48,7 +48,7 @@ effector-serve ./skills --allow-network --allow-subprocess
 ### Programmatic
 
 ```js
-import { createGuardedServer } from '@effectorhq/server';
+import { createGuardedServer } from '@effectorhq/serve';
 
 const server = await createGuardedServer('./skills', {
   strict: false,        // warn on type errors (default)
@@ -226,7 +226,7 @@ const stats = server.telemetry.getStats();
 
 ## API Reference
 
-### `@effectorhq/server`
+### `@effectorhq/serve`
 
 | Export | Description |
 |--------|-------------|
@@ -315,7 +315,7 @@ All `@effectorhq/*` packages, zero external dependencies:
 This package uses only `@effectorhq/*` packages and Node.js built-ins. The `@effectorhq/*` packages themselves have zero external dependencies. The entire dependency tree is:
 
 ```
-@effectorhq/server
+@effectorhq/serve
 ├── @effectorhq/core        (0 deps)
 ├── @effectorhq/skill-mcp   (→ @effectorhq/core)
 ├── @effectorhq/compose      (→ @effectorhq/core, @effectorhq/types)

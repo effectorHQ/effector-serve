@@ -1,12 +1,12 @@
-# Contributing to @effectorhq/server
+# Contributing to @effectorhq/serve
 
 Thank you for your interest in contributing!
 
 ## Development Setup
 
 ```bash
-git clone https://github.com/effectorHQ/effector-server.git
-cd effector-server
+git clone https://github.com/effectorHQ/effector-serve.git
+cd effector-serve
 npm install
 npm test
 ```

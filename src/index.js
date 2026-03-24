@@ -1,5 +1,5 @@
 /**
- * @effectorhq/server — Runtime MCP server with typed validation.
+ * @effectorhq/serve — Runtime MCP server with typed validation.
  *
  * Three layers:
  *   Typed      → Runtime I/O validation via guards
