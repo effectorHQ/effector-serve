@@ -7,9 +7,17 @@
   "bin": {
     "effector-serve": "bin/effector-serve.js"
   },
+  "files": [
+    "src/",
+    "bin/",
+    "LICENSE.md",
+    "README.md"
+  ],
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "start": "node bin/effector-serve.js"
+    "lint": "node --check src/*.js src/tools/*.js bin/*.js",
+    "start": "node bin/effector-serve.js",
+    "prepublishOnly": "npm test && npm run lint"
   },
   "keywords": [
     "effector",
@@ -18,9 +26,19 @@
     "openclaw",
     "ai-agents",
     "type-safety",
-    "runtime-validation"
+    "runtime-validation",
+    "capability-discovery",
+    "composition",
+    "permission-enforcement",
+    "telemetry",
+    "typed-tools"
   ],
+  "author": "effectorHQ Contributors",
   "license": "Apache-2.0",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/effectorHQ"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/effectorHQ/effector-serve.git"
