@@ -1,3 +1,10 @@
+> **📦 Consolidated.** This package is now part of [`effectorHQ/effector`](https://github.com/OpenClawHQ/effectorhq) → `packages/serve/`.
+> All active development continues in the monorepo. This repository remains available for reference.
+>
+> Install: `npm install @effectorhq/serve` (published from the monorepo)
+
+---
+
 # @effectorhq/serve
 
 [![Status: Alpha](https://img.shields.io/badge/status-alpha-orange.svg)](#)
